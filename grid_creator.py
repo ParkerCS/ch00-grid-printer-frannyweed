@@ -1,3 +1,5 @@
+# One small error.  Your grids run together.  You left an open end= " " print without a return.
+
 def print_grid(n):
     for j in range(2):
         print("+" + ((" -" * int(n / 2)) + " +") * 2, end=" ")
@@ -18,5 +20,6 @@ def print_grid2(n, m):
             print("|" + (("  " * int(m)) + " |")*n, end = " ")
             print()
     print("+" + ((" -" * int(m)) + " +") * n, end=" ")
-
+    print()
 print_grid2(5, 3)
+print_grid2(3,3)
